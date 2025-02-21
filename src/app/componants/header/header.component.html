@@ -1,0 +1,34 @@
+<header id="header">
+  <div class="logo">
+    <img [routerLink]="['/home']" src="../public/logo-akkogear.png" alt="logo">
+  </div>
+  <menu class="menu">
+    <a [routerLink]="['/tin-tuc']" class="TIN TỨC" href="#">TIN TỨC</a>
+    <a [routerLink]="['/ban-phim']" class="BÀN PHÍM" href="#">BÀN PHÍM</a>
+    <a [routerLink]="['/kit-ban-phim']" class="KIT BÀN PHÍM" href="#">KIT BÀN PHÍM</a>
+    <a [routerLink]="['/keycap']" class="KEYCAP" href="#">KEYCAP</a>
+    <a [routerLink]="['/chuot']" class="CHUỘT" href="#">CHUỘT</a>
+    <a [routerLink]="['/phu-kien']" class="PHỤ KIỆN" href="#">PHỤ KIỆN</a>
+    <a [routerLink]="['/switch']" class="SWITCH" href="#">SWITCH</a>
+    <div class="menu-item">
+      <a href="#">BÀN GHẾ</a>
+      <div class="menu-item-dropdown">
+        <a href="#">Ghế Chơi Game WARRIOR</a>
+        <a href="#">Ghế Công Thái Học WARRIOR</a>
+        <a href="#">Ghế DXRacer</a>
+        <a href="#">Bàn WARRIOR</a>
+        <a href="#">Kê chân</a>
+      </div>
+    </div>
+    <a href="#">HỖ TRỢ</a>
+    <div class="search">
+      <a href="#">ĐẠI LÝ</a>
+      <button><i class='bx bx-search-alt-2'></i></button>
+      <div class="search-dropdown">
+        <input type="text" placeholder="Nhập từ khoá cần tìm...">
+        <button class="search-button"><i class="bx bx-search-alt-2"></i></button>
+      </div>
+    </div>
+    <mat-icon [routerLink]="['/cart']" class="icon-cart" [matBadge]="cartService.cart.length">shopping_basket</mat-icon>
+  </menu>
+</header>

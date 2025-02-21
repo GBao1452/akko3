@@ -1,0 +1,37 @@
+<app-body-slide-show></app-body-slide-show>
+<app-section-title></app-section-title>
+
+<router-outlet></router-outlet>
+<div class="list-card">
+  @for (card of products; track $index){
+    <app-card [key]="card" ></app-card>
+  }
+</div>
+
+<app-keyboard-section></app-keyboard-section>
+
+<div class="list-card-2">
+  @for (card of productss; track $index){
+    <app-card-list [key]="card" ></app-card-list>
+  }
+</div>
+
+<app-section-title></app-section-title>
+<app-image-gallery></app-image-gallery>
+<app-keyboard-section></app-keyboard-section>
+
+<div class="list-card-2">
+  @for (card of productsss; track $index){
+    <app-card-list [key]="card" ></app-card-list>
+  }
+</div>
+
+<app-keyboard-section></app-keyboard-section>
+<app-backstop></app-backstop>
+
+<div class="list-card-2">
+  @for (card of productssss; track $index){
+    <app-card-list [key]="card" ></app-card-list>
+  }
+</div>
+<app-warranty-container></app-warranty-container>

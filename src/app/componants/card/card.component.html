@@ -1,0 +1,14 @@
+<div class="product-container">
+  <div class="product">
+    <a href="#">
+      <img src="{{key.image}}"  alt="{{key.name}}">
+    </a>
+    <p>{{key.name}}</p>
+    <p class="price"><b>{{key.money}}</b></p>
+    <div class="style">
+    <button (click)="cartService.addToCart(key)" mat-flat-button>Add to cart</button>
+    <button [routerLink]="['/key-detail', key.id]" mat-stroked-button>View detail</button>
+    </div>
+  </div>
+</div>
+

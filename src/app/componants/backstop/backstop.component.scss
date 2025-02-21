@@ -1,0 +1,22 @@
+#backtop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #cac8c8;
+  color: rgb(243, 240, 242);
+  border: 2px crimson;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 9999;
+}
+#backtop:hover {
+  background-color: #5a3e72;
+  transform: scale(1.1);
+}

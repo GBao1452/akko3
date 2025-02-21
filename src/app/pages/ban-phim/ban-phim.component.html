@@ -1,0 +1,38 @@
+<div class="breadcrumb">TRANG CHỦ / <strong>BÀN PHÍM</strong></div>
+<div class="container">
+  <aside class="sidebar">
+    <h3>DANH MỤC SẢN PHẨM</h3>
+    <ul>
+      <li>Bàn Ghế</li>
+      <li>Bàn phím</li>
+      <li>Cấu Trúc Bàn Phím</li>
+      <li>Chuột</li>
+      <li>Keycap</li>
+      <li>KIT Bàn phím</li>
+      <li>Phân loại Keycap</li>
+      <li>Phân loại Lauout</li>
+      <li>Phân loại switch</li>
+      <li>Phụ Kiện</li>
+      <li>Switch</li>
+    </ul>
+  </aside>
+  <main class="main-content">
+    <div class="header">
+      <h2>BÀN PHÍM</h2>
+      <div class="sort-dropdown">
+        <select>
+          <option>Mới nhất</option>
+          <option>Thứ tự theo mức độ phổ biến</option>
+          <option>Thứ tự theo điểm đánh giá</option>
+          <option>Thứ tự theo giá: thấp đến cao</option>
+          <option>Thứ tự theo giá: cao xuống thấp</option>
+        </select>
+      </div>
+    </div>
+    <div class="list-card">
+      @for (card of productsssss; track $index){
+        <app-card-keybroad [key]="card" ></app-card-keybroad>
+      }
+    </div>
+  </main>
+</div>

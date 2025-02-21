@@ -1,0 +1,50 @@
+<div class="container">
+  <aside class="sidebar">
+    <h3>DANH MỤC SẢN PHẨM</h3>
+    <ul>
+      <li>Bàn Ghế</li>
+      <li>Bàn phím
+        <ul>
+          <li><strong>Gasket Mount</strong></li>
+          <li>Spring Mount</li>
+          <li>Top Mount</li>
+          <li>Tray Mount</li>
+        </ul>
+      </li>
+      <li>Chuột</li>
+      <li>Dòng</li>
+      <li>Keycap</li>
+    </ul>
+  </aside>
+  <main class="main-content">
+    <nav class="breadcrumb">
+      <span [routerLink]="['/home']" >Trang chủ</span> /
+      <span>Cấu Trúc Bàn Phím</span> /
+      <span>Gasket Mount</span>
+    </nav>
+    <div class="product-container">
+      <div class="product-images">
+        <img id="mainImage" src="https://akkogear.com.vn/wp-content/uploads/2025/02/5075B-Plus_%E6%B8%B2%E6%9F%93%E5%9B%BE_%E8%8A%9D%E5%8A%A0%E5%93%A5_RGB%E6%AD%A3%E9%9D%A21-768x768.png" alt="{{key.name}}" class="main-image">
+        <div class="thumbnail-list">
+          <img src="https://akkogear.com.vn/wp-content/uploads/2025/02/5075B-Plus_%E6%B8%B2%E6%9F%93%E5%9B%BE_%E8%8A%9D%E5%8A%A0%E5%93%A5_RGB%E6%AD%A3%E9%9D%A21-768x768.png" class="thumbnail" onmouseover="changeImage(this)">
+          <img src="https://akkogear.com.vn/wp-content/uploads/2025/02/5075B-Plus_%E6%B8%B2%E6%9F%93%E5%9B%BE_%E8%8A%9D%E5%8A%A0%E5%93%A5_%E7%89%B9%E5%86%991-768x768.png" class="thumbnail" onmouseover="changeImage(this)">
+          <img src="https://akkogear.com.vn/wp-content/uploads/2025/02/5075B-Plus_%E6%B8%B2%E6%9F%93%E5%9B%BE_%E8%8A%9D%E5%8A%A0%E5%93%A5_%E5%89%8D%E4%BF%AF1-768x768.png" class="thumbnail" onmouseover="changeImage(this)">
+        </div>
+      </div>
+      <div class="product-info">
+        <h1 class="product-title">Bàn phím cơ AKKO 5075B Plus Chicago (Hotswap/RGB/Multi-modes)</h1>
+        <p class="price">1,990,000 đ</p>
+        <p class="category">Danh mục: 75%, AKKO Piano Pro, ASA Profile, RGB</p>
+        <p class="tags">Từ khóa: AKKO 5075B Plus Chicago</p>
+        <button (click)="cartService.addToCart(key)" mat-flat-button>Add to cart</button>
+        <div class="social-icons">
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="email"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="phone"><i class="fas fa-phone"></i></a>
+          <a href="#" class="rss"><i class="fas fa-rss"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
