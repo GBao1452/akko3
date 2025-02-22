@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {KeybroadModel} from '../../models/keybroad.model';
+import {KeyboardModel} from '../../models/keybroad.model';
 
 @Injectable({
   providedIn: 'root'
@@ -9,14 +9,11 @@ export class AkkoService {
 
   constructor() { }
 
-  viewDetail (id: string) {
-    const product = this.products.find(product => product.id === parseInt(id));
-    return product;
-    const products = this.products.find(products => products.id === parseInt(id));
-    return products;
+  findProductById(id: number): KeyboardModel | undefined {
+    return this.products.find(product => product.id == id);
   }
 
-  products: KeybroadModel[] = [
+  products: KeyboardModel[] = [
     {
       id: 1,
       image: 'https://akkogear.com.vn/wp-content/uploads/2025/02/Multi-modes-4-1-247x296.png',
@@ -66,7 +63,7 @@ export class AkkoService {
       money: 699,
     },
   ];
-  productss: KeybroadModel[] = [
+  productss: KeyboardModel[] = [
     {
       id: 9,
       image: 'https://akkogear.com.vn/wp-content/uploads/2025/02/5075B-Plus_%E6%B8%B2%E6%9F%93%E5%9B%BE_%E8%8A%9D%E5%8A%A0%E5%93%A5_RGB%E6%AD%A3%E9%9D%A21-247x296.png',
@@ -98,7 +95,7 @@ export class AkkoService {
       money: 899,
     },
   ];
-  productsss: KeybroadModel[] = [
+  productsss: KeyboardModel[] = [
     {
       id: 9,
       image: 'https://akkogear.com.vn/wp-content/uploads/2024/09/AG-ONE-8K-Joy-of-Life-2-600x600-1-247x296.png',
@@ -130,7 +127,7 @@ export class AkkoService {
       money: 369,
     },
   ];
-  productssss: KeybroadModel[] = [
+  productssss: KeyboardModel[] = [
     {
       id: 14,
       image: 'https://akkogear.com.vn/wp-content/uploads/2024/09/Akko-Capybara-Mouse-Pad-1-247x296.png',
@@ -162,7 +159,7 @@ export class AkkoService {
       money: 399,
     },
   ];
-  productsssss: KeybroadModel[] = [
+  productsssss: KeyboardModel[] = [
     {
       id: 19,
       image: 'https://akkogear.com.vn/wp-content/uploads/2025/02/Multi-modes-4-1-247x296.png',

@@ -8,7 +8,6 @@ import {KeyboardSectionComponent} from './componants/keyboard-section/keyboard-s
 import {ImageGalleryComponent} from './componants/image-gallery/image-gallery.component';
 import {BackstopComponent} from './componants/backstop/backstop.component';
 import {WarrantyContainerComponent} from './componants/warranty-container/warranty-container.component';
-import {KeybroadModel} from './models/keybroad.model';
 import {HomeComponent} from './pages/home/home.component';
 
 @Component({

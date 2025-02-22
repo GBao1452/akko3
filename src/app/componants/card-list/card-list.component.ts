@@ -1,8 +1,8 @@
 import {Component, Input} from '@angular/core';
 import {MatButton} from "@angular/material/button";
 import {RouterLink} from '@angular/router';
-import {KeybroadModel} from '../../models/keybroad.model';
 import {CartService} from '../../services/cart/cart.service';
+import {KeyboardModel} from '../../models/keybroad.model';
 
 @Component({
   selector: 'app-card-list',
@@ -15,7 +15,7 @@ import {CartService} from '../../services/cart/cart.service';
   styleUrl: './card-list.component.scss'
 })
 export class CardListComponent {
-  @Input() key!:KeybroadModel;
+  @Input() key!:KeyboardModel;
 
   constructor(protected cartService: CartService) {
   }
